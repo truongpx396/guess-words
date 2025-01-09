@@ -58,6 +58,8 @@ The main application logic is contained in the `main.go` file. It includes the f
 - `filterGuesses`: Refines the list of possible guesses based on satisfied feedback.
 - `isSatisfactoryFeedback`: Checks if a word satifies the feedback (not containing any absent word).
 
+The approach is to select a word from word list and call the API to get the feedback, then base on the feedback filter out unsatisfactory words, repeat the process until finding correct word or run out of word to check.
+
 ## Example Output
 ```sh
 listSize: 1000
